@@ -24,8 +24,11 @@ Core/Src/UART_Communication.o: ../Core/Src/UART_Communication.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- ../Core/Inc/Command_Parser.h ../Core/Inc/Sensor.h
+ ../Core/Inc/Command_Parser.h ../Core/Inc/Sensor.h \
+ ../Core/Inc/Software_timer.h
 
 ../Core/Inc/UART_Communication.h:
 
@@ -79,8 +82,14 @@ Core/Src/UART_Communication.o: ../Core/Src/UART_Communication.c \
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
+
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
+
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
 
 ../Core/Inc/Command_Parser.h:
 
 ../Core/Inc/Sensor.h:
+
+../Core/Inc/Software_timer.h:

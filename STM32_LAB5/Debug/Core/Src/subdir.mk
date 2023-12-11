@@ -7,6 +7,7 @@
 C_SRCS += \
 ../Core/Src/Command_Parser.c \
 ../Core/Src/Sensor.c \
+../Core/Src/Software_timer.c \
 ../Core/Src/UART_Communication.c \
 ../Core/Src/main.c \
 ../Core/Src/stm32f1xx_hal_msp.c \
@@ -18,6 +19,7 @@ C_SRCS += \
 OBJS += \
 ./Core/Src/Command_Parser.o \
 ./Core/Src/Sensor.o \
+./Core/Src/Software_timer.o \
 ./Core/Src/UART_Communication.o \
 ./Core/Src/main.o \
 ./Core/Src/stm32f1xx_hal_msp.o \
@@ -29,6 +31,7 @@ OBJS += \
 C_DEPS += \
 ./Core/Src/Command_Parser.d \
 ./Core/Src/Sensor.d \
+./Core/Src/Software_timer.d \
 ./Core/Src/UART_Communication.d \
 ./Core/Src/main.d \
 ./Core/Src/stm32f1xx_hal_msp.d \

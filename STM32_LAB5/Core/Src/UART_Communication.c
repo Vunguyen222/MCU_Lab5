@@ -8,7 +8,6 @@
 #include "UART_Communication.h"
 
 enum UARTStatus uart = UINIT;
-int counter = 300;
 uint32_t Data = 0;
 uint8_t sendback = 0;
 char arr[30];
@@ -32,6 +31,7 @@ void UART_Communication_FSM(){
 				sprintf(arr, "!ADC=%d#\r\n", (int)Data), 1000);
 			}
 			uart = WAIT_3s;
+			setTimer(3000);
 			break;
 		case WAIT_3s:
 			// finish communication
@@ -41,12 +41,11 @@ void UART_Communication_FSM(){
 				command_OK = 0;
 			}
 			else{
-				counter--;
-				if(counter <= 0){
+				if(timer_flag){
 					uart = RST;
 					sendback = 1;
-					counter = 300;
 				}
+
 			}
 			break;
 		default:
